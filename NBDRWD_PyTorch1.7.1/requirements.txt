@@ -1,0 +1,8 @@
+opencv-python
+matplotlib
+tqdm
+imageio
+scikit-image
+scipy
+PyTorch 1.7.1
+pytorch-wavelets

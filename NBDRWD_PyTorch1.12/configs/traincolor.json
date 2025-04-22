@@ -1,0 +1,49 @@
+{
+  "train_dataset": {
+    "root_path": "./dataset/train_data",
+    "patch_size": 256,
+    "is_train": false,
+    "num_channels": 3,
+    "num_workers": 1,
+    "sigma_min": 0,
+    "sigma_max": 12.75,
+    "batch_size": 8
+  },
+
+  "val_dataset": {
+    "root_path": "./dataset/val_data",
+    "kernel_path": "./data/kernels_8.mat",
+    "num_channels": 3,
+    "noise_level": 2.55,
+    "kernel_index": 0
+  },
+
+  "model": {
+    "model_select": "NBDRWD",
+    "model_save_file": "pretrainedmodels",
+    "num_channels": 3
+  },
+
+  "optimizer": {
+    "name": "adam",
+    "lr": 1e-4
+  },
+
+  "multi_step_lr": {
+    "milestone": 100
+  },
+
+  "train_options": {
+    "epoch_val": 1,
+    "epoch_save": 100,
+    "epochs": 500,
+    "resume": false,
+    "resume_model_name": "ckp_NBDRWD_50.pth",
+    "is_train_gauss": true,
+    "is_train_jpeg_compression": false,
+    "seed": 123,
+    "disable_cuda": true,
+    "device_ids": [0],
+    "log_file": "deblur_logger.txt"
+  }
+}

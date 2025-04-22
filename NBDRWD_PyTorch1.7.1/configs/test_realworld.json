@@ -1,0 +1,21 @@
+{
+  "test_dataset": {
+    "is_gray_scale": false,
+    "is_test_real": true,
+    "is_test_nonuniform": false,
+    "is_test_gauss": false,
+    "is_test_jpeg_compression": false,
+    "is_test_impulse": false,
+    "result_save_file": "results",
+    "root_path": "./dataset/test_data",
+    "test_data": "Pandata",
+    "kernel_path": "./dataset/PandataKernels",
+    "test_noise_level": 0,
+    "test_noise_intensity": 0.1,
+    "jpeg_quality_factor": 60,
+    "num_channels": 3,
+    "sigma_min": 0,
+    "sigma_max": 12.75,
+    "batch_size": 1
+  }
+}
